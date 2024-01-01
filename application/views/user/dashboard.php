@@ -65,7 +65,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="filterKota" id="exampleRadios1"
                                 value="Kota Malang">
-                            <label class="form-check-label " for="exampleRadios1">Kota Malang
+                            <label class="form-check-label " for="exampleRadios1">Kota Jakarta
                             </label>
                         </div>
                     </div>

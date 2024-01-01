@@ -16,7 +16,6 @@
     body {
         color: #ffffff;
         background: #86a3eb;
-        background-image: url('assets/img/bgLogin.jpg');
         /* Sesuaikan dengan kebutuhan */
     }
 

@@ -85,7 +85,7 @@ class Daftar_kost extends CI_Controller{
 				<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
 				<strong>Berhasil Input</strong>
 			  	</div>");
-		redirect("administrator/daftar_kost/input_kost");
+		redirect("administrator/daftar_kost/");
 	}
 
 	public function detail($idkost){
@@ -173,7 +173,7 @@ class Daftar_kost extends CI_Controller{
 				<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
 				<strong>Berhasil Input</strong>
 			  	</div>");
-		redirect("administrator/daftar_kost/update_kost/".$idkost);
+		redirect("administrator/daftar_kost");
 	}
 
 	public function hapus_kost($idkost) {
