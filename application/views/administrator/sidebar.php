@@ -25,6 +25,12 @@
                         </a>
                     </li>
                     <li>
+                        <a class="nav-link" href="<?php echo base_url('administrator/daftar_kamar') ?>">
+                            <i class="fa-solid fa-file mr-2"></i>
+                            <p>Daftar Kamar</p>
+                        </a>
+                    </li>
+                    <li>
                         <a class="nav-link" href="<?php echo base_url('administrator/daftar_user') ?>">
                             <i class="fa fa-users mr-2"></i>
                             <p>Daftar Pengguna</p>

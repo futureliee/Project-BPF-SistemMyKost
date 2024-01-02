@@ -76,5 +76,27 @@ class Main_model extends CI_Model{
     public function hapus_favorit($where){
         $this->db->delete('favorit',$where);
     }
+
+
+    public function tampil_data_kamar(){
+        return $this->db->get('data_kamar')->result_array();
+    }
+    public function tampil_kamar_where($where){
+        return $this->db->get_where('data_kamar',$where)->row_array();
+    }
+    public function tampil_nama_kost(){
+        return $this->db->get('data_kost')->result_array();
+    }
+    public function input_kamar($data){
+        $this->db->insert("data_kamar",$data);
+    }
+    public function update_kamar($data,$where){  
+        $this->db->where($where);
+        $this->db->update("data_kamar",$data);
+    }
+    public function hapus_kamar_by_id($idkamar) {
+        $this->db->where('id', $idkamar);
+        $this->db->delete('data_kamar');
+    }
 }
 ?>

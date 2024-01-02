@@ -73,7 +73,7 @@
                   'marker-color':'#f86767',
                   'marker-size':'large',
                   'marker-symbol':'star-stroked',
-                  'url' : 'http://localhost/MyKost/administrator/daftar_kost/update_kost/$id'
+                  'url' : 'http://localhost/ProjectBPF23-24_SistemMyKost/administrator/daftar_kost/update_kost/$id'
                 },
                 'geometry':{
                   'type':'Point',

@@ -195,7 +195,7 @@
                   'marker-color':'#f86767',
                   'marker-size':'large',
                   'marker-symbol':'star-stroked',
-                  'url' : 'http://localhost/Sistem_MyKost/user/dashboard/detail/$id'
+                  'url' : 'http://localhost/ProjectBPF23-24_SistemMyKost/user/dashboard/detail/$id'
                 },
                 'geometry':{
                   'type':'Point',

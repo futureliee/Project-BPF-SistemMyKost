@@ -26,7 +26,7 @@ $(document).ready(()=>{
     <a href="dashboard/detail/${id}">
     <div class="item mt-3">
         <div class="image">
-            <img src="http://localhost/Sistem_MyKost/assets/img/gambar_kost/${foto}" width="350" alt="">
+            <img src="http://localhost/ProjectBPF23-24_SistemMyKost/assets/img/gambar_kost/${foto}" width="350" alt="">
         </div>
         <div class="contents ml-2">
             <h1>${nmkost}</h1>
@@ -45,7 +45,7 @@ $(document).ready(()=>{
         let x =1;
         console.log($("#searchField").val());
         $.ajax({
-            url : `http://localhost/Sistem_MyKost/administrator/dashboard/data_kost/${$("#searchField").val()}`,
+            url : `http://localhost/ProjectBPF23-24_SistemMyKost/administrator/dashboard/data_kost/${$("#searchField").val()}`,
             type : 'get',
             dataType : 'json',
             success : (result)=>{
