@@ -33,4 +33,22 @@ class Dashboard extends CI_Controller{
 			redirect("login_controller/index");
 		}
 	}
+	public function detailKamar($idkamar){
+		$id = $this->session->userdata("iduser");
+		if($id!=null){
+			$this->load->model('main_model');
+			$data["user"]=$this->main_model->get_user_where(["id"=>$id]);
+			$data["kamar"]=$this->main_model->tampil_kamar_where(["id"=>$idkamar]);
+			$where=[
+				"id_user"=>$id,
+				"id_kamar"=>$idkamar
+			];
+			$this->load->view('template/header');
+			$this->load->view('user/sidebar');
+			$this->load->view('user/detail_kamar',$data);
+			$this->load->view('template/footer');
+		}else{
+			redirect("login_controller/index");
+		}
+	}
 }

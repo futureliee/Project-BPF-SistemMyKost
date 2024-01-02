@@ -50,7 +50,7 @@
                     </tr>
                     <tr>
                         <th>Nomer Telepon </th>
-                        <td> : <?=$kost["telepon"]?></td>
+                        <td> : <?=$kost["telepon"]?><a href="https://api.whatsapp.com/send?phone=+628123456789&text=Halo"> (Hubungi DI WA)</a></td>
                     </tr>
                     <tr>
                         <th>Alamat </th>
@@ -66,6 +66,8 @@
                     </tr>
                     <tr>
                         <td><button class="btn btn-info mt-3 btn-sm" id="showMap">Lihat Peta</button></td>
+                        <!-- <td><button class="btn btn-info mt-3 btn-sm"><a href='http://localhost/ProjectBPF23-24_SistemMyKost/user/dashboard/detailKamar/$id'>Lihat Kamar</a></button></td> -->
+                        <td><a href="<?=base_url().'user/dashboard/detailKamar'?>"><button class="btn btn-info mt-3 btn-sm">Lihat Kamar</button></a></td>
                         <td>
                             <?php if($favorit==null){?>
                             <form action="<?=base_url().'user/favorit/tambah_favorit'?>" method="POST">
